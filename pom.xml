@@ -6,7 +6,12 @@
 
   <groupId>cn.zxbetter.happy</groupId>
   <artifactId>common</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <version>1.1-SNAPSHOT</version>
+  <modules>
+    <module>common-web</module>
+    <module>common-core</module>
+  </modules>
 
   <name>happy-common</name>
   <url>http://happy.zxbetter.cn</url>
@@ -40,9 +45,28 @@
     </dependency>
   </dependencies>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>cn.zxbetter.happy</groupId>
+        <artifactId>common-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <build>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>versions-maven-plugin</artifactId>
+          <version>2.7</version>
+          <configuration>
+            <!-- 不备份原文件 -->
+            <generateBackupPoms>false</generateBackupPoms>
+          </configuration>
+        </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>

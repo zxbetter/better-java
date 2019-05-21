@@ -1,0 +1,29 @@
+<Configuration>
+    <property name="LOG_HOME" value="D:/datas/logs/happy/common" />
+
+    <property name="COLOR_CONSOLE"
+              value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%highlight(%-5level)] %logger - %msg%n" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${COLOR_CONSOLE}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/app.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/app.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <MaxHistory>30</MaxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%-5level] %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="ROLLING_FILE"/>
+    </root>
+</Configuration>
