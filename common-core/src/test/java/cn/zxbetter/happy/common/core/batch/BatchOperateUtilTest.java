@@ -19,6 +19,7 @@ public class BatchOperateUtilTest {
         List<Integer> list = IntStream.range(1, 100).boxed().collect(Collectors.toList());
         Integer result = BatchOperateUtil.<Integer, Integer>batch(list)
                 .action(subList -> subList.stream().mapToInt(Integer::intValue).sum())
+                .batchCount(5)
                 .result(Integer::sum)
                 .setLogger(LOG)
                 .begin();

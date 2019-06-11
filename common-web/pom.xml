@@ -18,5 +18,17 @@
             <groupId>cn.zxbetter.happy</groupId>
             <artifactId>common-core</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>
