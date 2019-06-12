@@ -1,6 +1,6 @@
-package cn.zxbetter.happy.common.web.exception;
+package zx.common.web.exception;
 
-import cn.zxbetter.happy.common.core.logger.LogUtil;
+import zx.common.core.logger.LogUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 

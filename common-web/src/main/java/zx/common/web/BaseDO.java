@@ -1,4 +1,4 @@
-package cn.zxbetter.happy.common.web;
+package zx.common.web;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package cn.zxbetter.happy.common.web.exception;
+package zx.common.web.exception;
 
 /**
  * 消息提供类

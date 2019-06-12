@@ -1,4 +1,4 @@
-package cn.zxbetter.happy.common.core.batch;
+package zx.common.core.batch;
 
 import org.slf4j.Logger;
 

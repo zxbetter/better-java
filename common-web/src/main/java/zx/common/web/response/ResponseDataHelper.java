@@ -1,7 +1,7 @@
-package cn.zxbetter.happy.common.web.response;
+package zx.common.web.response;
 
-import cn.zxbetter.happy.common.web.exception.DefaultMessage;
-import cn.zxbetter.happy.common.web.exception.Message;
+import zx.common.web.exception.DefaultMessage;
+import zx.common.web.exception.Message;
 
 import java.util.ArrayList;
 import java.util.List;

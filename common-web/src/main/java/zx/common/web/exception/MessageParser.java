@@ -1,4 +1,4 @@
-package cn.zxbetter.happy.common.web.exception;
+package zx.common.web.exception;
 
 /**
  * {@link Message} 消息的解析器

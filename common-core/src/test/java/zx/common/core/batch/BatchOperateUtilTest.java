@@ -1,15 +1,11 @@
-package cn.zxbetter.happy.common.core.batch;
+package zx.common.core.batch;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-
-import static org.junit.Assert.*;
 
 @Slf4j
 public class BatchOperateUtilTest {
