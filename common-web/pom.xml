@@ -18,17 +18,5 @@
             <groupId>zx.common</groupId>
             <artifactId>common-core</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>javax.persistence</groupId>
-            <artifactId>persistence-api</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>mapper</artifactId>
-            <optional>true</optional>
-        </dependency>
     </dependencies>
 </project>
